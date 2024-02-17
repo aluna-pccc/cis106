@@ -1,8 +1,12 @@
----
-Student: Alberto Luna
-semester: Spring 24
-Assignment: Lab 3
----
+|Student: Alberto Luna|
+| --- |
+
+|Semester: Spring 24|
+| --- | 
+
+|Assignment: Lab 3|
+| --- |
+
 
 # Lab 3 Submission
 
