@@ -1,9 +1,7 @@
+#!/bin/bash
 # Author: Alberto Luna
 # Date: 02/28/2024
-# Description: 
 
-
-#!/bin/bash
 echo "This is the current user: " $USER
 
 # User devine variable
@@ -18,17 +16,13 @@ echo "He has $w"
 echo "and is $h inches tall"
 
 # Using variables with commands: 
-
 # list all the files in the users' Downloads Folder
-
 ls $HOME/Downloads
 
 # list all the files in the home folder including hidden
-
 ls -al $HOME
 
 #using Variables in path
 
 ls -l /home/$USER/Pictures
-
 ls -al /home/$USER/Pictures
