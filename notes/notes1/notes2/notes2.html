@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Commands for Navigating the File System</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="name-alberto-lunaassignment-notes-2course-cis106semester-spring-24">name: Alberto Luna
+assignment: Notes 2
+course: cis106
+semester: spring 24</h2>
+<h2 id="commands-for-navigating-the-file-system">Commands for Navigating the File System</h2>
+<h3 id="1-cd-change-directory">1. cd (Change Directory)</h3>
+<p><strong>Description:</strong> Change the current working directory.
+<strong>Usage/Formula:</strong> <code>cd [directory]</code>
+<strong>Examples:</strong></p>
+<ul>
+<li><code>cd Documents</code> - Changes directory to the &quot;Documents&quot; directory.</li>
+<li><code>cd ..</code> - Moves one directory up.</li>
+<li><code>cd - </code> - Moves back to the previous directory.</li>
+<li><code>cd /usr/bin</code> - Changes directory to an absolute path.</li>
+</ul>
+<h3 id="2-ls-list">2. ls (List)</h3>
+<p><strong>Description:</strong> List directory contents.
+<strong>Usage/Formula:</strong> <code>ls [options] [directory]</code>
+<strong>Examples:</strong></p>
+<ul>
+<li><code>ls -l</code> - Lists contents in long format.</li>
+<li><code>ls -a</code> - Lists all files including hidden ones.</li>
+<li><code>ls -al</code> - Lists all files including hidden ones in long format.</li>
+<li><code>ls Documents</code> - Lists contents of the &quot;Documents&quot; directory.</li>
+</ul>
+<h3 id="3-pwd-print-working-directory">3. pwd (Print Working Directory)</h3>
+<p><strong>Description:</strong> Print the current working directory.
+<strong>Usage/Formula:</strong> <code>pwd</code>
+<strong>Examples:</strong></p>
+<ul>
+<li><code>pwd</code> - Displays the current working directory path.</li>
+<li><code>pwd -L</code> - Displays the current working directoy path, even if it contains symlinks.</li>
+<li><code>pwd -P</code> - Displays the current working directory path avoid all symlinks.</li>
+</ul>
+<h2 id="definitions">Definitions</h2>
+<h3 id="file-system">File System</h3>
+<p>A file system is a method for storing and organizing computer files and the data they contain to make it easy to find and access them.</p>
+<h3 id="pathname">Pathname</h3>
+<p>A pathname is the unique location of a file or directory in a file system.</p>
+<h3 id="absolute-path">Absolute Path</h3>
+<p>An absolute path is a full path that starts from the root directory and specifies the complete directory structure.</p>
+<h3 id="relative-path">Relative Path</h3>
+<p>A relative path is a path that is specified relative to the current working directory.</p>
+<h3 id="your-home-directory-vs-the-home-directory">Your Home Directory vs. The Home Directory</h3>
+<p>Your home directory refers to the directory that belongs to your user account, while the home directory typically refers to the root directory of the system or the home directory of the superuser.</p>
+<h3 id="parent-directory">Parent Directory</h3>
+<p>The parent directory is the directory that contains the current directory.</p>
+<h3 id="child-directory-or-subdirectory">Child Directory or Subdirectory</h3>
+<p>A child directory or subdirectory is a directory that is contained within another directory.</p>
+<h3 id="bash-special-characters">Bash Special Characters</h3>
+<p>Bash special characters are characters with special meanings in the Bash shell, such as wildcard characters (* and ?) and redirection symbols (&gt; and &lt;).</p>
+<h3 id="environment-variables">Environment Variables</h3>
+<p>Environment variables are variables that are part of the shell environment and can be accessed by all processes running in that environment.</p>
+<h3 id="user-defined-variables">User Defined Variables</h3>
+<p>User-defined variables are variables created by the user in a shell script or session to store values for later use.</p>
+<h2 id="why-use--for-referencing-variables-in-shell-scripts">Why Use $ for Referencing Variables in Shell Scripts</h2>
+<p>In shell scripts, the <code>$</code> symbol is used to reference the value of a variable because it distinguishes the variable from regular text and allows the shell to interpret and substitute the variable's value in the script.</p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
