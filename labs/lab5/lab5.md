@@ -4,7 +4,7 @@
 |Semester: Spring 24|
 | --- | 
 
-|Assignment: Lab 4|
+|Assignment: Lab 5|
 | --- |
 
 
