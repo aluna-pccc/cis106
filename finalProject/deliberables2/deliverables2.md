@@ -14,7 +14,7 @@ Instructor: Alberto Luna
 
 ## Questions
 3. **What is the IP address of your Ubuntu Server Virtual Machine?**
-   `192.168.90.195`
+   `192.168.90.204`
 4. **How do you enable the Ubuntu Firewall?**
    `sudo ufw enable`
 5. **How do you check if the Ubuntu Firewall is running?**
